@@ -1507,7 +1507,7 @@
                     <pathelement location="${stress.test.classes}"/>
                     <pathelement location="${fqltool.test.classes}"/>
                     <pathelement location="${test.conf}"/>
-                    <fileset dir="${test.lib}">
+                    <fileset dir="${build.dir.lib}">
                         <include name="**/*.jar"/>
                     </fileset>
                 </classpath>
