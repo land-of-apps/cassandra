@@ -1412,6 +1412,7 @@
                 <path refid="cassandra.classpath"/>
                 <pathelement location="${fqltool.build.classes}"/>
                 <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
+                <pathelement location="${basedir}/lib/jstackjunit-0.0.1.jar"/>
             </classpath>
             <compilerarg value="-XDignore.symbol.file"/>
             <src path="${test.unit.src}"/>
