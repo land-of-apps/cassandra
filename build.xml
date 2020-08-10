@@ -56,7 +56,7 @@
     <property name="test.classlistprefix" value="unit"/>
     <property name="benchmark.name" value=""/>
     <property name="test.methods" value=""/>
-    <property name="test.unit.src" value="${test.dir}/unit"/>
+    <property name="test.unit.src" value="${test.dir}/unit/org/apache/cassandra/auth"/>
     <property name="test.long.src" value="${test.dir}/long"/>
     <property name="test.burn.src" value="${test.dir}/burn"/>
     <property name="test.memory.src" value="${test.dir}/memory"/>
@@ -774,7 +774,6 @@
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-generator-annprocess"/>
             <dependency groupId="net.ju-n.compile-command-annotations" artifactId="compile-command-annotations"/>
             <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.9.7"/>
-            <dependency groupId="org.apache.ant" artifactId="ant-junit4" version="1.8.4"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-cli"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-core"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-stacktrace"/>
@@ -805,7 +804,6 @@
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-generator-annprocess"/>
             <dependency groupId="net.ju-n.compile-command-annotations" artifactId="compile-command-annotations"/>
             <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.9.7"/>
-            <dependency groupId="org.apache.ant" artifactId="ant-junit4" version="1.8.4"/>
             <dependency groupId="org.assertj" artifactId="assertj-core"/>
             <dependency groupId="org.awaitility" artifactId="awaitility"/>
         </artifact:pom>
@@ -1414,7 +1412,6 @@
                 <path refid="cassandra.classpath"/>
                 <pathelement location="${fqltool.build.classes}"/>
                 <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
-                <pathelement location="${basedir}/lib/ant-junit4-1.8.4.jar"/>
             </classpath>
             <compilerarg value="-XDignore.symbol.file"/>
             <src path="${test.unit.src}"/>
@@ -1459,7 +1456,6 @@
             <taskdef name="junit-timeout" classname="org.krummas.junit.JStackJUnitTask">
             <classpath>
                 <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
-                <pathelement location="${basedir}/lib/ant-junit4-1.8.4.jar"/>
                 <pathelement location="${basedir}/lib/jstackjunit-0.0.1.jar"/>
             </classpath>
             </taskdef>
