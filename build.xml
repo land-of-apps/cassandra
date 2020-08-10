@@ -1507,6 +1507,7 @@
                     <pathelement location="${stress.test.classes}"/>
                     <pathelement location="${fqltool.test.classes}"/>
                     <pathelement location="${test.conf}"/>
+                    <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
                     <fileset dir="${basedir}/lib">
                         <include name="**/*.jar"/>
                     </fileset>
