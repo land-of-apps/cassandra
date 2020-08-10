@@ -29,7 +29,7 @@ import static org.apache.cassandra.audit.AuditLogFilter.isFiltered;
 public class AuditLogFilterTest
 {
     @Test
-    public void testisFiltered_IncludeSetOnly()
+    public void isFiltered_IncludeSetOnly()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
@@ -46,7 +46,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_ExcludeSetOnly()
+    public void isFiltered_ExcludeSetOnly()
     {
         Set<String> includeSet = new HashSet<>();
 
@@ -63,7 +63,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_MutualExclusive()
+    public void isFiltered_MutualExclusive()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
@@ -80,7 +80,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_MutualInclusive()
+    public void isFiltered_MutualInclusive()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
@@ -99,7 +99,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_UnSpecifiedInput()
+    public void isFiltered_UnSpecifiedInput()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
@@ -117,7 +117,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_SpecifiedInput()
+    public void isFiltered_SpecifiedInput()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
@@ -133,7 +133,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_FilteredInput_EmptyInclude()
+    public void isFiltered_FilteredInput_EmptyInclude()
     {
         Set<String> includeSet = new HashSet<>();
         Set<String> excludeSet = new HashSet<>();
@@ -144,7 +144,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_FilteredInput_EmptyExclude()
+    public void isFiltered_FilteredInput_EmptyExclude()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
@@ -160,7 +160,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_EmptyInputs()
+    public void isFiltered_EmptyInputs()
     {
         Set<String> includeSet = new HashSet<>();
         Set<String> excludeSet = new HashSet<>();
@@ -170,7 +170,7 @@ public class AuditLogFilterTest
     }
 
     @Test
-    public void testisFiltered_NullInputs()
+    public void isFiltered_NullInputs()
     {
         Set<String> includeSet = new HashSet<>();
         Set<String> excludeSet = new HashSet<>();
