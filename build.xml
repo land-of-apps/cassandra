@@ -1452,6 +1452,11 @@
                        else="">
                 <istrue value="${usejacoco}"/>
             </condition>
+            <taskdef name="junit" classname="org.apache.tools.ant.taskdefs.optional.junit.JUnitTask">
+                <classpath>
+                    <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
+                </classpath>
+            </taskdef>
             <!-- use https://github.com/krummas/jstackjunit to get thread dumps when unit tests time out -->
             <taskdef name="junit-timeout" classname="org.krummas.junit.JStackJUnitTask"
                      classpath="${basedir}/lib/jstackjunit-0.0.1.jar"/>
@@ -1507,7 +1512,6 @@
                     <pathelement location="${stress.test.classes}"/>
                     <pathelement location="${fqltool.test.classes}"/>
                     <pathelement location="${test.conf}"/>
-                    <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
                     <fileset dir="${basedir}/lib">
                         <include name="**/*.jar"/>
                     </fileset>
