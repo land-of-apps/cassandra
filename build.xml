@@ -1411,6 +1411,7 @@
             <classpath>
                 <path refid="cassandra.classpath"/>
                 <pathelement location="${fqltool.build.classes}"/>
+                <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
             </classpath>
             <compilerarg value="-XDignore.symbol.file"/>
             <src path="${test.unit.src}"/>
@@ -1452,8 +1453,12 @@
                 <istrue value="${usejacoco}"/>
             </condition>
             <!-- use https://github.com/krummas/jstackjunit to get thread dumps when unit tests time out -->
-            <taskdef name="junit-timeout" classname="org.krummas.junit.JStackJUnitTask"
-                     classpath="lib/jstackjunit-0.0.1.jar"/>
+            <taskdef name="junit-timeout" classname="org.krummas.junit.JStackJUnitTask">
+            <classpath>
+                <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
+                <pathelement location="${basedir}/lib/jstackjunit-0.0.1.jar"/>
+            </classpath>
+            </taskdef>
             <mkdir dir="${build.test.dir}/cassandra"/>
             <mkdir dir="${build.test.dir}/output"/>
             <mkdir dir="${build.test.dir}/output/@{testtag}"/>
