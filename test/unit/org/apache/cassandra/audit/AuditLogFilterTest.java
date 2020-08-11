@@ -29,7 +29,7 @@ import static org.apache.cassandra.audit.AuditLogFilter.isFiltered;
 public class AuditLogFilterTest
 {
     @Test
-    public void isFiltered_IncludeSetOnly()
+    public void testIsFiltered_IncludeSetOnly()
     {
         Set<String> includeSet = new HashSet<>();
         includeSet.add("a");
