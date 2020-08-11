@@ -774,7 +774,6 @@
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-generator-annprocess"/>
             <dependency groupId="net.ju-n.compile-command-annotations" artifactId="compile-command-annotations"/>
             <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.9.7"/>
-            <dependency groupId="junit" artifactId="junit" version="4.12"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-cli"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-core"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-stacktrace"/>
@@ -805,7 +804,6 @@
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-generator-annprocess"/>
             <dependency groupId="net.ju-n.compile-command-annotations" artifactId="compile-command-annotations"/>
             <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.9.7"/>
-            <dependency groupId="junit" artifactId="junit" version="4.12"/>
             <dependency groupId="org.assertj" artifactId="assertj-core"/>
             <dependency groupId="org.awaitility" artifactId="awaitility"/>
         </artifact:pom>
