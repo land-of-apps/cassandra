@@ -773,7 +773,7 @@
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-core"/>
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-generator-annprocess"/>
             <dependency groupId="net.ju-n.compile-command-annotations" artifactId="compile-command-annotations"/>
-            <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.9.7"/>
+            <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.10.8"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-cli"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-core"/>
             <dependency groupId="org.gridkit.jvmtool" artifactId="sjk-stacktrace"/>
@@ -803,7 +803,7 @@
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-core"/>
             <dependency groupId="org.openjdk.jmh" artifactId="jmh-generator-annprocess"/>
             <dependency groupId="net.ju-n.compile-command-annotations" artifactId="compile-command-annotations"/>
-            <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.9.7"/>
+            <dependency groupId="org.apache.ant" artifactId="ant-junit" version="1.10.8"/>
             <dependency groupId="org.assertj" artifactId="assertj-core"/>
             <dependency groupId="org.awaitility" artifactId="awaitility"/>
         </artifact:pom>
@@ -1411,7 +1411,7 @@
             <classpath>
                 <path refid="cassandra.classpath"/>
                 <pathelement location="${fqltool.build.classes}"/>
-                <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
+                <pathelement location="${basedir}/lib/ant-junit-1.10.8.jar"/>
             </classpath>
             <compilerarg value="-XDignore.symbol.file"/>
             <src path="${test.unit.src}"/>
@@ -1455,7 +1455,7 @@
             <!-- use https://github.com/krummas/jstackjunit to get thread dumps when unit tests time out -->
             <taskdef name="junit-timeout" classname="org.krummas.junit.JStackJUnitTask">
             <classpath>
-                <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
+                <pathelement location="${basedir}/lib/ant-junit-1.10.8.jar"/>
                 <pathelement location="${basedir}/lib/jstackjunit-0.0.1.jar"/>
             </classpath>
             </taskdef>
