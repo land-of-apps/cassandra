@@ -1476,7 +1476,7 @@
                 <jvmarg value="-Dcassandra.debugrefcount=true"/>
                 <jvmarg value="-Xss256k"/>
                 <jvmarg value="-javaagent:${basedir}/appmap.jar"/>
-                <jvmarg value="-Dappmap.output.directory=${basedir}/appmap"/>
+                <jvmarg value="-Dappmap.output.directory=${basedir}/tmp/appmap"/>
                 <!--<jvmarg value="-Dappmap.debug"/>-->
                 <!-- When we do classloader manipulation SoftReferences can cause memory leaks
                      that can OOM our test runs. The next two settings informs our GC
