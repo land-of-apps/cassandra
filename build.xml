@@ -1456,6 +1456,7 @@
             <taskdef name="junit-timeout" classname="org.krummas.junit.JStackJUnitTask">
             <classpath>
                 <pathelement location="${build.dir.lib}/jars/ant-junit-1.9.7.jar"/>
+                <pathelement location="${build.dir.lib}/jars/junit-4.12.jar"/>
                 <pathelement location="${basedir}/lib/jstackjunit-0.0.1.jar"/>
             </classpath>
             </taskdef>
