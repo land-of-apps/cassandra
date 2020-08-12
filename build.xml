@@ -56,7 +56,7 @@
     <property name="test.classlistprefix" value="unit"/>
     <property name="benchmark.name" value=""/>
     <property name="test.methods" value=""/>
-    <property name="test.unit.src" value="${test.dir}/unit/org/apache/cassandra/auth"/>
+    <property name="test.unit.src" value="${test.dir}/unit"/>
     <property name="test.long.src" value="${test.dir}/long"/>
     <property name="test.burn.src" value="${test.dir}/burn"/>
     <property name="test.memory.src" value="${test.dir}/memory"/>
