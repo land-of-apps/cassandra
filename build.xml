@@ -56,7 +56,7 @@
     <property name="test.classlistprefix" value="unit"/>
     <property name="benchmark.name" value=""/>
     <property name="test.methods" value=""/>
-    <property name="test.unit.src" value="${test.dir}/unit"/>
+    <property name="test.unit.src" value="${test.dir}/unit/org/apache/cassandra/auth"/>
     <property name="test.long.src" value="${test.dir}/long"/>
     <property name="test.burn.src" value="${test.dir}/burn"/>
     <property name="test.memory.src" value="${test.dir}/memory"/>
@@ -864,8 +864,8 @@
             <dependency groupId="com.addthis.metrics" artifactId="reporter-config3"/>
             <dependency groupId="com.clearspring.analytics" artifactId="stream"/>
 
-            <dependency groupId="ch.qos.logback" artifactId="logback-core"/>
-            <dependency groupId="ch.qos.logback" artifactId="logback-classic"/>
+        <dependency groupId="ch.qos.logback" artifactId="logback-core"/>
+        <dependency groupId="ch.qos.logback" artifactId="logback-classic"/>
 
             <!-- don't need hadoop classes to run, but if you use the hadoop stuff -->
             <dependency groupId="org.apache.hadoop" artifactId="hadoop-core" optional="true"/>
@@ -1476,7 +1476,7 @@
                 <jvmarg value="-Dcassandra.debugrefcount=true"/>
                 <jvmarg value="-Xss256k"/>
                 <jvmarg value="-javaagent:${basedir}/appmap.jar"/>
-                <jvmarg value="-Dappmap.output.directory=${basedir}/appmap"/>
+                <!--<jvmarg value="-Dappmap.output.directory=${basedir}/tmp/appmap"/>-->
                 <!--<jvmarg value="-Dappmap.debug"/>-->
                 <!-- When we do classloader manipulation SoftReferences can cause memory leaks
                      that can OOM our test runs. The next two settings informs our GC

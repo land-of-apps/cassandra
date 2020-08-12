@@ -1,6 +1,11 @@
 # Turn on validation, so we can use import:
 version: ~> 1.0
 
+addons:
+  apt:
+    packages:
+    - ant-optional
+
 jdk:
 - openjdk8
 import: land-of-apps/land-of-apps:travis/java-imports.yml
