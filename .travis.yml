@@ -11,4 +11,4 @@ jdk:
 import: land-of-apps/land-of-apps:travis/java-imports.yml
 
 script:
-- ant test -Dtest.name=org.apache.cassandra.auth.AuthCacheTest
+- ant test
