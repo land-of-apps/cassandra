@@ -11,4 +11,4 @@ jdk:
 import: land-of-apps/land-of-apps:travis/java-imports.yml
 
 script:
-- travis_wait 30 bash ./run-tests.sh
+- bash ./run-tests.sh
