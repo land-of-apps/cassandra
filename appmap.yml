@@ -1,0 +1,3 @@
+name: cassandra
+packages:
+- path: org.apache.cassandra
